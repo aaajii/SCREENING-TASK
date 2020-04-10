@@ -1,3 +1,9 @@
-goorm.manifest
+// DJANGO FILES
+db.sqlite3
 
+
+// VIRTUAL ENVIRONMENTS
 env/
+
+// GOORM IDE FILES
+goorm.manifest
