@@ -1,6 +1,9 @@
 // DJANGO FILES
 db.sqlite3
+*.pyc
 
+// TEST FILES
+.pytest_cache/
 
 // VIRTUAL ENVIRONMENTS
 env/
