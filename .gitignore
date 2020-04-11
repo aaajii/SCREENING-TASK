@@ -3,6 +3,8 @@
 
 // TEST FILES
 .pytest_cache/
+.coverage
+htmlcov/
 
 // DATABASES
 db.sqlite3

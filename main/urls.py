@@ -1,13 +1,17 @@
-from django.urls import include, path
+from django.urls import include, path, reverse_lazy
 from django.contrib import admin
+from django.views.generic import RedirectView
+
 from rest_framework import routers
 from agile import views
 
 router = routers.DefaultRouter()
-router.register(r'category', views.CategoryViewSet)
+router.register('category', views.CategoryViewSet, basename='category')
+router.register('content', views.ContentViewSet, basename='content')
 
 urlpatterns = [
-    path('', include(router.urls), name='home'),
-    path('admin/', admin.site.urls),
+    path('',RedirectView.as_view(pattern_name='api-root')),
+    path('api/', include(router.urls)),
+    path('admin/', admin.site.urls, name='admin'),
 
 ]

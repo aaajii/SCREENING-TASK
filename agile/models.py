@@ -13,7 +13,7 @@ class Category(models.Model):
 
 
 class Content(models.Model):
-    order = models.IntegerField(max_length=20)
+    order = models.IntegerField()
     category = models.ForeignKey(Category,
                                  on_delete=models.CASCADE,
                                  related_name="content")
