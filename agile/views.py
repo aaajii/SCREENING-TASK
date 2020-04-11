@@ -5,7 +5,7 @@ from agile.serializers import CategorySerializer, ContentSerializer
 
 class CategoryViewSet(viewsets.ModelViewSet):
     """
-        API Viewset that displays the Content Model
+        API Viewset that displays the Category Model
     """
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

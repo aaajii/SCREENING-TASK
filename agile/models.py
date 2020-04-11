@@ -28,4 +28,4 @@ class Content(models.Model):
         return self.category.name
 
     class Meta:
-        ordering = ['order']
+        ordering = ['created_at', 'order']
